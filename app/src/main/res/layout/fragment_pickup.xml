@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="online.ors.oldraddisold.activity.MainActivity">
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:contentDescription="@string/content_description"
+		android:scaleType="centerCrop"
+		android:src="@drawable/bg_pickup"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			fontPath="fonts/lato-extra-bold.ttf"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="46dp"
+			android:gravity="center"
+			android:text="@string/let_us_pick_up"
+			android:textColor="@color/green"
+			android:textSize="30sp"
+			android:textStyle="bold"
+			tools:ignore="MissingPrefix"/>
+
+	</LinearLayout>
+
+	<android.support.v7.widget.AppCompatButton
+		android:id="@+id/btn_pickup"
+		fontPath="fonts/lato-bold.ttf"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginBottom="80dp"
+		android:background="@drawable/green_corner"
+		android:text="@string/pickup"
+		android:textAllCaps="false"
+		android:textColor="@color/white"
+		android:textSize="@dimen/text_large"
+		android:textStyle="bold"/>
+</FrameLayout>

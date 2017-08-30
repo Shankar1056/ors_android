@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="online.ors.oldraddisold.activity.ScheduleDetailsActivity"
+	tools:ignore="MissingPrefix">
+
+	<include layout="@layout/toolbar"/>
+
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/narrow">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/narrow"
+							android:text="@string/schedule_id"
+							android:textColor="@color/black"/>
+
+						<TextView
+							android:id="@+id/tv_schedule_id"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="end"
+							android:padding="@dimen/narrow"
+							android:text="@string/schedule_id"
+							android:textColor="@color/black"/>
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0.5dp"
+						android:background="@color/grey_e0e0e0"/>
+
+					<android.support.v7.widget.RecyclerView
+						android:id="@+id/rv_items"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/standard"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/narrow"
+							android:text="@string/schedule_date"
+							android:textColor="@color/grey_545454"/>
+
+						<TextView
+							android:id="@+id/tv_schedule_date"
+							fontPath="fonts/lato-regular.ttf"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="end"
+							android:padding="@dimen/narrow"
+							android:text="@string/schedule_id"
+							android:textColor="@color/grey_545454"/>
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0.5dp"
+						android:background="@color/grey_e0e0e0"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/standard"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/narrow"
+							android:text="@string/schedule_time"
+							android:textColor="@color/grey_545454"/>
+
+						<TextView
+							android:id="@+id/tv_schedule_time"
+							fontPath="fonts/lato-regular.ttf"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="end"
+							android:padding="@dimen/narrow"
+							android:text="@string/schedule_id"
+							android:textColor="@color/grey_545454"/>
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0.5dp"
+						android:background="@color/grey_e0e0e0"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/standard"
+						android:gravity="bottom"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/narrow"
+							android:text="@string/address"
+							android:textColor="@color/grey_545454"/>
+
+						<TextView
+							android:id="@+id/tv_schedule_address"
+							fontPath="fonts/lato-regular.ttf"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="end"
+							android:padding="@dimen/narrow"
+							android:text="@string/schedule_id"
+							android:textColor="@color/grey_545454"/>
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0.5dp"
+						android:background="@color/grey_e0e0e0"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/standard"
+						android:orientation="horizontal">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="@dimen/narrow"
+							android:text="@string/schedule_status"
+							android:textColor="@color/grey_545454"/>
+
+						<TextView
+							android:id="@+id/tv_schedule_status"
+							fontPath="fonts/lato-regular.ttf"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="end"
+							android:padding="@dimen/narrow"
+							android:text="@string/schedule_id"
+							android:textColor="@color/green"/>
+					</LinearLayout>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0.5dp"
+						android:background="@color/grey_e0e0e0"/>
+
+					<LinearLayout
+						android:id="@+id/ll_price"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/tv_price_info"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:paddingBottom="@dimen/standard"
+							android:paddingEnd="@dimen/narrow"
+							android:paddingStart="@dimen/narrow"
+							android:paddingTop="@dimen/standard"
+							android:text="@string/price_info"
+							android:textColor="@color/colorPrimary"/>
+
+						<View
+							android:layout_width="match_parent"
+							android:layout_height="0.5dp"
+							android:background="@color/grey_e0e0e0"/>
+
+						<android.support.v7.widget.RecyclerView
+							android:id="@+id/rv_pickup_rate"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							app:layoutManager="LinearLayoutManager"
+							tools:listitem="@layout/item_pickup_rate"/>
+
+						<View
+							android:layout_width="match_parent"
+							android:layout_height="0.5dp"
+							android:background="@color/grey_e0e0e0"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/standard"
+							android:orientation="horizontal">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="@dimen/narrow"
+								android:text="@string/total_price"
+								android:textColor="@color/black"/>
+
+							<TextView
+								android:id="@+id/tv_total_price"
+								fontPath="fonts/lato-regular.ttf"
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:gravity="end"
+								android:padding="@dimen/narrow"
+								android:text="@string/schedule_id"
+								android:textColor="@color/colorPrimary"/>
+						</LinearLayout>
+
+						<View
+							android:layout_width="match_parent"
+							android:layout_height="0.5dp"
+							android:layout_marginTop="@dimen/standard"
+							android:background="@color/grey_e0e0e0"/>
+					</LinearLayout>
+
+					<TextView
+						android:id="@+id/tv_cancel_schedule"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:drawablePadding="@dimen/narrow"
+						android:drawableStart="@drawable/ic_cancel_blue_18dp"
+						android:gravity="center"
+						android:padding="@dimen/standard"
+						android:text="@string/cancel_schedule"
+						android:textColor="@color/light_blue"/>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:id="@+id/cv_contact"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/narrow">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="@dimen/thick"
+						android:text="@string/pick_up_contact"
+						android:textColor="@color/black"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="0.5dp"
+						android:background="@color/grey_e0e0e0"/>
+
+					<TextView
+						android:id="@+id/tv_agent_contact"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:autoLink="phone"
+						android:drawablePadding="@dimen/standard"
+						android:drawableStart="@drawable/ic_contact_us_orange_24dp"
+						android:gravity="center"
+						android:padding="@dimen/standard"
+						android:textColor="@color/colorPrimary"
+						tools:text="9663379596"/>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+		</LinearLayout>
+
+	</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

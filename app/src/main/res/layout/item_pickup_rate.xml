@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:padding="@dimen/narrow"
+	tools:ignore="MissingPrefix">
+
+	<TextView
+		android:id="@+id/tv_title_qty"
+		fontPath="fonts/lato-regular.ttf"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="@dimen/text_small"
+		tools:text="Aluminium (2kg)"/>
+
+	<TextView
+		android:id="@+id/tv_price"
+		fontPath="fonts/lato-regular.ttf"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="end"
+		android:textColor="@color/colorPrimary"
+		android:textSize="@dimen/text_small"
+		tools:text="\u20B9 40"/>
+</LinearLayout>

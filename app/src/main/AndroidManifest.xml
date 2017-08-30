@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="online.ors.oldraddisold">
+
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.READ_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+	<uses-feature
+		android:name="android.hardware.camera"
+		android:required="false"/>
+
+	<application
+		android:name="online.ors.oldraddisold.app.App"
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:roundIcon="@mipmap/ic_launcher"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name="online.ors.oldraddisold.activity.MainActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.FullScreen"
+			android:windowSoftInputMode="stateAlwaysHidden">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="online.ors.oldraddisold.activity.AuthActivity"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.OTPActivity"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.SignUpActivity"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.HomeActivity"
+			android:label="@string/app_name"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.RateCard"
+			android:windowSoftInputMode="adjustPan"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.ScheduleHistoryActivity"
+			android:label="@string/my_schedules"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Pickup"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.ScheduleDetailsActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Pickup"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.PickupItemActivity"
+			android:label="@string/items"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Pickup"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.AboutActivity"
+			android:label="@string/about_ors"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.BankDetailsActivity"
+			android:label="@string/bank_details"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.BankDetails"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.ContactUsActivity"
+			android:label="@string/contact_us"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.IllegalDumpActivity"
+			android:label="@string/illegal_dumping"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.ProfileActivity"
+			android:label="@string/my_profile"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.FullScreen"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.WalletTransactionActivity"
+			android:label="@string/wallet_transactions"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.BankDetails"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.PickupActivity"
+			android:label="@string/pickup"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Pickup"
+			android:windowSoftInputMode="adjustPan"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.PickupConfirmActivity"
+			android:label="@string/confirm_pickup"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Pickup"
+			android:windowSoftInputMode="adjustPan"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.MapActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Pickup"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.PostPickupActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Pickup"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.FeedActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.FullScreen"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.CommentActivity"
+			android:label="@string/comments"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.NGOActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.BankDetails"
+			android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.ProfileEditActivity"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.FAQActivity"
+			android:label="@string/faq"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.MobileEditActivity"
+			android:screenOrientation="portrait"/>
+		<activity
+			android:name="online.ors.oldraddisold.activity.MobileOTPActivity"
+			android:screenOrientation="portrait"/>
+
+		<service
+			android:name="online.ors.oldraddisold.service.AddressResolverService"
+			android:exported="false"/>
+		<service
+			android:name="online.ors.oldraddisold.service.MyInstanceIDListenerService"
+			android:exported="false">
+			<intent-filter>
+				<action android:name="com.google.android.gms.iid.InstanceID"/>
+			</intent-filter>
+		</service>
+		<service
+			android:name="online.ors.oldraddisold.service.RegistrationIntentService"
+			android:exported="false">
+		</service>
+		<service
+			android:name="online.ors.oldraddisold.service.GcmNotificationService"
+			android:exported="false">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+			</intent-filter>
+		</service>
+		<service
+			android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+			android:enabled="true"/>
+
+		<receiver
+			android:name="com.google.android.gms.gcm.GcmReceiver"
+			android:exported="true"
+			android:permission="com.google.android.c2dm.permission.SEND">
+			<intent-filter>
+				<action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+
+				<category android:name="com.bigappcompany.ors"/>
+			</intent-filter>
+		</receiver>
+
+		<!-- Google map API -->
+		<meta-data
+			android:name="com.google.android.geo.API_KEY"
+			android:value="@string/google_maps_key"/>
+	</application>
+
+</manifest>

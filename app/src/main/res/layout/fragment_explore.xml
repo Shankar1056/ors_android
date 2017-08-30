@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal"
+	android:padding="@dimen/standard">
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/tv_my_schedule"
+			style="@style/explore_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/standard"
+			android:drawableTop="@drawable/ic_my_schedule_orange_50dp"
+			android:text="@string/my_schedules"/>
+
+		<TextView
+			android:id="@+id/tv_illegal_dumping"
+			style="@style/explore_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/standard"
+			android:drawableTop="@drawable/ic_illegal_dumping_orange_50dp"
+			android:text="@string/illegal_dumping"/>
+
+		<TextView
+			android:id="@+id/tv_contact_us"
+			style="@style/explore_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/standard"
+			android:drawableTop="@drawable/ic_contact_us_orange_50dp"
+			android:text="@string/contact_us"/>
+
+		<TextView
+			android:id="@+id/tv_privacy"
+			style="@style/explore_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/standard"
+			android:background="@color/grey_eeeeee"
+			android:drawableTop="@drawable/ic_privacy_orange_50dp"
+			android:paddingBottom="@dimen/small"
+			android:text="@string/privacy"
+			android:visibility="gone"/>
+	</LinearLayout>
+
+	<View
+		android:layout_width="0.5dp"
+		android:layout_height="match_parent"
+		android:layout_marginEnd="@dimen/thick"
+		android:layout_marginStart="@dimen/thick"
+		android:background="@color/grey_cccccc"/>
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/tv_my_profile"
+			style="@style/explore_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/standard"
+			android:drawableTop="@drawable/ic_my_profile_orange_50dp"
+			android:text="@string/my_profile"/>
+
+		<TextView
+			android:id="@+id/tv_about_ors"
+			style="@style/explore_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/standard"
+			android:drawableTop="@drawable/ic_about_ors_orange_50dp"
+			android:text="@string/about_ors"/>
+
+		<TextView
+			android:id="@+id/tv_faq"
+			style="@style/explore_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/standard"
+			android:drawableTop="@drawable/ic_faq_orange_50dp"
+			android:text="@string/faq"/>
+
+		<TextView
+			style="@style/explore_items"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/standard"
+			android:background="@color/grey_eeeeee"
+			android:drawableTop="@drawable/ic_privacy_orange_50dp"
+			android:paddingBottom="@dimen/small"
+			android:text="@string/privacy"
+			android:visibility="gone"/>
+	</LinearLayout>
+</LinearLayout>

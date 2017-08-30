@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	app:cardCornerRadius="0dp"
+	tools:ignore="MissingPrefix">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/tv_top_title"
+			fontPath="fonts/lato-regular.ttf"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/thick"
+			android:text="We accept all kinds of scrap which can be recycled. and used to protect the habitat we live in."
+			android:textColor="@color/black"
+			android:textSize="@dimen/text_medium"/>
+
+		<ImageView
+			android:id="@+id/iv_image"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/image_height_regular"
+			android:contentDescription="@string/content_description"
+			android:scaleType="centerCrop"/>
+
+		<TextView
+			android:id="@+id/tv_bottom_title"
+			fontPath="fonts/lato-regular.ttf"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/transparent_underline"
+			android:padding="@dimen/narrow"
+			android:textColor="@color/black"
+			tools:text="We accept all kinds of scrap which can be recycled."/>
+
+		<TextView
+			android:id="@+id/tv_date"
+			fontPath="fonts/lato-regular.ttf"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/thick"
+			android:textSize="@dimen/text_tiny"
+			tools:text="Feb 02"/>
+	</LinearLayout>
+
+</android.support.v7.widget.CardView>

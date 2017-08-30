@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "653564258818",
+    "firebase_url": "https://old-raddi-sold-1331.firebaseio.com",
+    "project_id": "old-raddi-sold-1331",
+    "storage_bucket": "old-raddi-sold-1331.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653564258818:android:098d6c6cc9f14163",
+        "android_client_info": {
+          "package_name": "online.ors.oldraddisold"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653564258818-549rjepttqe99ee4hmr6pgj2ci9ha6sl.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "653564258818-6j232c4357tkh1g8op3vpjrqhthhfcbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "online.ors.oldraddisold",
+            "certificate_hash": "0949fa36187b99ca416b0cd91c59e05d147ed831"
+          }
+        },
+        {
+          "client_id": "653564258818-7vnfgenuh32fqkose2dsng87pp5kmn9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0ukdJcUf0ZxvCraB9vMynM9TGmrXvUmY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653564258818-549rjepttqe99ee4hmr6pgj2ci9ha6sl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

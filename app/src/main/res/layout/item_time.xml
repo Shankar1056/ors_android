@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	fontPath="fonts/lato-regular.ttf"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:padding="@dimen/narrow"
+	android:text="8:30 to 9:00 AM"
+	android:textColor="@color/selector_date"
+	android:textSize="26sp"
+	tools:ignore="MissingPrefix"/>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="online.ors.oldraddisold.activity.NGOActivity"
+	tools:ignore="MissingPrefix">
+
+	<include layout="@layout/toolbar"/>
+
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<ImageView
+					android:id="@+id/iv_ngo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:adjustViewBounds="true"
+					android:contentDescription="@null"
+					android:src="@drawable/bg_ngo"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"
+					android:background="@color/transparent_black"
+					android:orientation="vertical"
+					android:paddingBottom="@dimen/narrow"
+					android:paddingEnd="@dimen/standard"
+					android:paddingStart="@dimen/standard"
+					android:paddingTop="@dimen/narrow">
+
+					<TextView
+						android:id="@+id/tv_title"
+						fontPath="fonts/lato-bold.ttf"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/ngo_name"
+						android:textColor="@color/white"
+						android:textSize="@dimen/text_large"/>
+
+					<TextView
+						android:id="@+id/tv_place"
+						fontPath="fonts/lato-bold.ttf"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/ngo_location"
+						android:textColor="@color/white"
+						android:textSize="@dimen/text_small"/>
+				</LinearLayout>
+			</FrameLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/standard"
+				android:text="@string/description"
+				android:textAllCaps="true"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_medium"/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="0.5dp"
+				android:background="@color/grey_e0e0e0"/>
+
+			<TextView
+				android:id="@+id/tv_desc"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:lineSpacingExtra="@dimen/narrow"
+				android:padding="@dimen/standard"
+				android:text="@string/ngo_desc"
+				android:textColor="@color/grey_545454"/>
+		</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

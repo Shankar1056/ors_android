@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical"
+	tools:context="online.ors.oldraddisold.activity.PickupActivity">
+
+	<include layout="@layout/toolbar"/>
+
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rv_date"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/date_gradient"/>
+	</android.support.v7.widget.CardView>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rv_time"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/gradient_time"/>
+	</FrameLayout>
+
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:cardElevation="@dimen/standard"
+		app:contentPadding="@dimen/standard">
+
+		<android.support.v4.widget.NestedScrollView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:fillViewport="true">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<android.support.v7.widget.AppCompatEditText
+					android:id="@+id/et_address"
+					style="@style/EditText.PickUp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableEnd="@drawable/ic_map_location_green_24dp"
+					android:drawablePadding="@dimen/thick"
+					android:hint="@string/address_line_1"
+					android:inputType="textPostalAddress"/>
+
+				<android.support.v7.widget.AppCompatEditText
+					android:id="@+id/et_area"
+					style="@style/EditText.PickUp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/address_line_2"
+					android:inputType="textPostalAddress"/>
+
+				<android.support.v7.widget.AppCompatEditText
+					android:id="@+id/et_landmark"
+					style="@style/EditText.PickUp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/landmark"
+					android:inputType="textPostalAddress"/>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:gravity="center">
+
+					<android.support.v7.widget.AppCompatButton
+						android:id="@+id/btn_submit"
+						fontPath="fonts/lato_regular"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:background="@color/green"
+						android:paddingBottom="@dimen/narrow"
+						android:paddingTop="@dimen/narrow"
+						android:text="@string/submit"
+						android:textAllCaps="false"
+						android:textColor="@color/white"
+						android:textSize="@dimen/text_btn"
+						android:textStyle="bold"/>
+				</LinearLayout>
+			</LinearLayout>
+		</android.support.v4.widget.NestedScrollView>
+	</android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="online.ors.oldraddisold.activity.BankDetailsActivity">
+
+	<include layout="@layout/toolbar"/>
+
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_margin="@dimen/thick"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:paddingBottom="@dimen/narrow"
+				android:paddingEnd="@dimen/thick"
+				android:paddingStart="@dimen/thick"
+				android:paddingTop="@dimen/big"
+				android:text="@string/hint_bank_details"
+				android:textColor="@color/black"/>
+
+			<View
+				android:layout_width="100dp"
+				android:layout_height="0dp"
+				android:layout_gravity="center_horizontal"
+				android:layout_weight="1"
+				android:background="@drawable/top_border"/>
+
+			<android.support.v7.widget.AppCompatEditText
+				android:id="@+id/et_account_no"
+				style="@style/EditText_BankDetails"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/standard"
+				android:hint="@string/account_number"
+				android:inputType="number"/>
+
+			<android.support.v7.widget.AppCompatEditText
+				android:id="@+id/et_beneficiary"
+				style="@style/EditText_BankDetails"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/account_hold_name"
+				android:inputType="textCapWords"/>
+
+			<android.support.v7.widget.AppCompatEditText
+				android:id="@+id/et_bank_name"
+				style="@style/EditText_BankDetails"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/bank_name"
+				android:inputType="textCapWords"/>
+
+			<android.support.v7.widget.AppCompatEditText
+				android:id="@+id/et_branch_name"
+				style="@style/EditText_BankDetails"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/branch_name"
+				android:inputType="textCapWords"/>
+
+			<android.support.v7.widget.AppCompatEditText
+				android:id="@+id/et_ifsc_code"
+				style="@style/EditText_BankDetails"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="@string/ifsc_code"
+				android:inputType="textCapCharacters"/>
+
+			<android.support.v7.widget.AppCompatEditText
+				android:id="@+id/et_registered_mobile"
+				style="@style/EditText_BankDetails"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/standard"
+				android:hint="@string/bank_registered_mobile_number"
+				android:inputType="phone"/>
+		</LinearLayout>
+	</android.support.v7.widget.CardView>
+
+	<android.support.v7.widget.AppCompatButton
+		android:id="@+id/btn_submit"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/walletPrimary"
+		android:paddingBottom="@dimen/standard"
+		android:paddingTop="@dimen/standard"
+		android:text="@string/submit"
+		android:textAllCaps="false"
+		android:textColor="@color/white"
+		android:textSize="@dimen/text_btn"/>
+</LinearLayout>

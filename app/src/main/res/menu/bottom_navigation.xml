@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/nav_feed"
+		android:checkable="true"
+		android:checked="true"
+		android:icon="@drawable/selector_feeds"
+		android:title="@string/feed"/>
+
+	<item
+		android:id="@+id/nav_pick_up"
+		android:checkable="true"
+		android:icon="@drawable/selector_feeds"
+		android:title="@string/feed"/>
+
+	<item
+		android:id="@+id/nav_wallet"
+		android:checkable="true"
+		android:icon="@drawable/selector_feeds"
+		android:title="@string/feed"/>
+
+	<item
+		android:id="@+id/nav_rate_card"
+		android:checkable="true"
+		android:icon="@drawable/selector_feeds"
+		android:title="@string/feed"/>
+
+	<item
+		android:id="@+id/nav_explore"
+		android:checkable="true"
+		android:icon="@drawable/selector_feeds"
+		android:title="@string/explore"/>
+</menu>

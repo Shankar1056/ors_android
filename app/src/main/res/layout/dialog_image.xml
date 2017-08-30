@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	android:orientation="vertical"
+	android:paddingBottom="@dimen/standard">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/colorPrimary"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginStart="@dimen/standard"
+			android:text="@string/camera_or_gallery"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_medium"/>
+
+		<LinearLayout
+			android:id="@+id/ll_exit"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentEnd="true"
+			android:layout_marginEnd="@dimen/narrow"
+			android:gravity="center">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="@dimen/narrow"
+				android:layout_marginStart="@dimen/narrow"
+				android:contentDescription="@string/content_description"
+				android:src="@drawable/ic_close_white_24dp"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_camera"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/standard"
+		android:layout_marginLeft="@dimen/standard"
+		android:layout_marginRight="@dimen/standard"
+		android:layout_marginStart="@dimen/standard"
+		android:layout_marginTop="@dimen/standard"
+		android:background="@drawable/support_bg"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/grey_cccccc"
+			android:gravity="center"
+			android:minHeight="40dp"
+			android:minWidth="40dp"
+			android:padding="@dimen/thin">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/content_description"
+				android:src="@drawable/ic_photo_camera_white_18dp"/>
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/standard"
+			android:text="@string/take_a_snap"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/ll_gallery"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="@dimen/standard"
+		android:layout_marginLeft="@dimen/standard"
+		android:layout_marginRight="@dimen/standard"
+		android:layout_marginStart="@dimen/standard"
+		android:layout_marginTop="@dimen/standard"
+		android:background="@drawable/support_bg"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@color/grey_cccccc"
+			android:gravity="center"
+			android:minHeight="40dp"
+			android:minWidth="40dp"
+			android:padding="@dimen/thin">
+
+			<ImageView
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:contentDescription="@string/content_description"
+				android:src="@drawable/ic_collections_white_18dp"/>
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/standard"
+			android:text="@string/gallery"/>
+	</LinearLayout>
+</LinearLayout>

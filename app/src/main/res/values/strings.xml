@@ -1,0 +1,216 @@
+<resources>
+
+	<string name="google_maps_key"
+		templateMergeStrategy="preserve"
+		translatable="false">AIzaSyB1ki4aw0g30pUwXNCYqgdn3IVx6oMOWT4
+	</string>
+
+	<string name="app_name">ORS</string>
+	<string name="title_home">Home</string>
+	<string name="title_dashboard">Dashboard</string>
+	<string name="title_notifications">Notifications</string>
+	<string name="feed">Feed</string>
+	<string name="explore">Explore</string>
+	<string name="pickup">Pick Up</string>
+	<string name="rate_card">Rate Card</string>
+	<string name="wallet">Wallet</string>
+	<string name="content_description">Content description</string>
+	<string name="schedule_id">Schedule Id</string>
+	<string name="rate_us">Rate Us</string>
+	<string name="logout">Log Out</string>
+	<string name="search">Search</string>
+	<string name="my_schedules">My Schedules</string>
+	<string name="privacy">Privacy</string>
+	<string name="contact_us">Contact Us</string>
+	<string name="illegal_dumping">Illegal Dumping</string>
+	<string name="my_profile">My Profile</string>
+	<string name="about_ors">About ORS Services</string>
+	<string name="faq">FAQ</string>
+	<string name="let_us_pick_up">Let\'s Pick up\nScrap today</string>
+	<string name="mark_desired_options">Mark the desired items\nYou can mark multiple options</string>
+	<string name="submit">Submit</string>
+	<string name="aluminium">Aluminium</string>
+	<string name="items">Items</string>
+	<string name="skip">Skip</string>
+	<string name="sign_in">Sign In</string>
+	<string name="enter_mobile_no_here">Enter Mobile No Here</string>
+	<string name="sign_up">Sign Up</string>
+	<string name="enter_your_name">Enter Your Name</string>
+	<string name="enter_your_email_id">Enter Your Email Id</string>
+	<string name="hint_donate">Did you know you can donate to ORS affiliated entities?</string>
+	<string name="your_balance">Your Balance</string>
+	<string name="minimum_redeem">500 minimum balance to redeem</string>
+	<string name="wallet_transactions">Wallet Transactions</string>
+	<string name="donate_now">Donate Now</string>
+	<string name="redeem_now">Redeem Now</string>
+	<string name="view_order_details">View Order Details</string>
+	<string name="format_schedule_status">Schedule Status\u0020\u0020:\u0020\u0020\u0020\u0020\u0020 %s</string>
+	<string name="format_schedule_date">Schedule Date \u0020\u0020\u0020\u0020:\u0020\u0020\u0020 %s</string>
+	<string name="format_schedule_time">Schedule Time \u0020\u0020\u0020\u0020:\u0020\u0020\u0020 %s</string>
+	<string name="bank_details">Bank Details</string>
+	<string name="hint_bank_details">Kindly provide us with following details to transfer amount to account</string>
+	<string name="account_number">Account Number</string>
+	<string name="account_hold_name">Account Holder Name</string>
+	<string name="bank_name">Bank Name</string>
+	<string name="branch_name">Branch Name</string>
+	<string name="ifsc_code">IFSC Code</string>
+	<string name="bank_registered_mobile_number">Bank Registered Mobile Number</string>
+	<string name="hint_inquiry">If you have any other questions, please contact us.\nPlease put an appropriate subject in mail</string>
+	<string name="contact_information">Contact Information</string>
+	<string name="address">Address</string>
+	<string name="ors_address">Recover habitat Pvt Ltd, 1 – 6 temple road NGEF quarters Sadanandanagar, Bangalore - 560043</string>
+	<string name="ors_mail">recover@recoverhabitat.com</string>
+	<string name="email_id">Email Id</string>
+	<string name="add_image">Add Image</string>
+	<string name="enter_desc_here">Enter description here</string>
+	<string name="save_address">Save Address</string>
+	<string name="grant_permission">Permission not granted</string>
+	<string name="cancel">Cancel</string>
+	<string name="gps_network_not_enabled">Please enable GPS</string>
+	<string name="open_location_settings">open settings</string>
+	<string name="Cancel">Cancel</string>
+	<string name="no_location">Couldn\'t get the address</string>
+	<string name="no_location_data_provided">No location is available</string>
+	<string name="service_not_available">Service not available</string>
+	<string name="invalid_lat_long_used">Invalid latlong</string>
+	<string name="no_address_found">No address found</string>
+	<string name="please_choose_location">Please select a location on the map</string>
+	<string name="thank_you">Thank You</string>
+	<string name="go_to_my_schedule">Go To My Schedule</string>
+	<string name="tap_to_exit">Tap Back Again To Exit</string>
+	<string name="verify_otp">Verify OTP</string>
+	<string name="enter_otp_here">Enter OTP here</string>
+	<string name="authenticating">Authenticating...</string>
+	<string name="invalid_mobile">Invalid phone</string>
+	<string name="invalid_otp">Invalid OTP</string>
+	<string name="verifying_otp">Verifyng OTP</string>
+	<string name="schedule_time">Schedule Time</string>
+	<string name="logged_in_successfully">Logged in successfully</string>
+	<string name="schedule_date">Schedule Date</string>
+	<string name="zip_code">Zip Code</string>
+	<string name="landmark">Landmark</string>
+	<string name="schedule_status">Schedule Status</string>
+	<string name="price_info">Price Information</string>
+	<string name="total_price">Total Price</string>
+	<string name="cancel_schedule">Cancel Schedule</string>
+	<string name="pick_up_contact">Pickup Boy contact Number</string>
+	<string name="name">Name</string>
+	<string name="mobile_number">Mobile Number</string>
+	<string name="loading_items">Loading items...</string>
+	<string name="scheduling_pickup">Scheduling pickup...</string>
+	<string name="fetch_time_slots">Fetching time slots...</string>
+	<string name="loading_pickup_history">Loading pickup histories...</string>
+	<string name="loading_history_details">Loading history details</string>
+	<string name="canceling_schedule">Cancelling schedule</string>
+	<string name="title_cancel_schedule">Cancel Schedule?</string>
+	<string name="hint_cancel_schedule">Are you sure you wish to cancel the schedule?</string>
+	<string name="yes">Yes</string>
+	<string name="loading_balance">Loading Wallet...</string>
+	<string name="format_rupee_float">\u20B9 %.2f</string>
+	<string name="format_float">%.2f</string>
+	<string name="format_rupee_int">\u20B9 %d</string>
+	<string name="title_donate">Donate?</string>
+	<string name="donate_message">Are you sure you wish to donate \u20B9 %.2f to ORS affiliated entities?</string>
+	<string name="donate">Donate</string>
+	<string name="making_donation">Making donation...</string>
+	<string name="invalid_account_number">invalid account number</string>
+	<string name="invalid_beneficiary_name">Invalid beneficiary name</string>
+	<string name="invalid_bank_name">Invalid bank name</string>
+	<string name="invalid_branch_name">Invalid branch name</string>
+	<string name="invalid_ifsc">Invalid IFSC</string>
+	<string name="invalid_amount">Invalid amount</string>
+	<string name="redeeming_from_wallet">Redeeming from wallet...</string>
+	<string name="save_bank_details">Save bank details for further transaction</string>
+	<string name="rupee_symbol">\u20B9\u0020</string>
+	<string name="loading_transaction_details">Loading transaction details...</string>
+	<string name="format_phone">(+91) %s</string>
+	<string name="loading_rate_card">Loading rate card...</string>
+	<string name="format_price_unit">\u20B9 %1$.2f/%2$s</string>
+	<string name="format_price">\u20B9 %.2f</string>
+	<string name="insufficient_balance">Insufficient Balance</string>
+	<string name="share">Share</string>
+	<string name="loading_feeds">Loading feeds...</string>
+	<string name="view_comments">View Comments</string>
+	<string name="be_the_first">Be the first to comment</string>
+	<string name="loading_comments">Loading comments...</string>
+	<string name="comments">Comments</string>
+	<string name="type_comment_here">Type Comment Here</string>
+	<string name="donate_know_more"><u>Know More on donate?</u></string>
+	<string name="description">Description</string>
+	<string name="title_logout">Logout?</string>
+	<string name="confirm_logout">Are you sure you wish to logout from the app?</string>
+	<string name="reporting_illegal_dump">Reporting illegal dump...</string>
+	<string name="gallery">From Gallery</string>
+	<string name="take_a_snap">Take a snap</string>
+	<string name="camera_or_gallery">Camera or Gallery?</string>
+	<string name="permission_denied">Permission denied!</string>
+	<string name="edit">Edit</string>
+	<string name="modify">Modify</string>
+	<string name="updating_info">Updating profile...</string>
+	<string name="registering">Registering...</string>
+	<string name="app_not_installed">Application not installed</string>
+	<string name="loading_bank_details">Loading bank details...</string>
+	<string name="confirm_pickup">Confirm Pickup</string>
+	<string name="remarks">Remarks (Optional)</string>
+	<string name="title_schedule_pickup">Schedule pickup?</string>
+	<string name="msg_schedule_pickup">Are you sure you wish to schedule the pickup?</string>
+	<string name="schedule">SChedule</string>
+	<string name="hint_reason_for_cancelling">Reason for cancelling</string>
+	<string name="no_schedules_yet">No schedules yet</string>
+	<string name="format_title_qty">%1$s (%2$.2f%3$s)</string>
+	<string name="loading_faq">Loading FAQ</string>
+	<string name="edit_mobile">Edit Mobile</string>
+	<string name="mobile_number_changed">Mobile number changed successfully</string>
+	<string name="address_line_1">Address Line 1</string>
+	<string name="address_line_2">Address Line 2</string>
+	<string name="invalid_address">Invalid Address</string>
+	<string name="select_future">Please choose future timing</string>
+	<string name="ngo_desc"><![CDATA[Future Ray Play & Learn is on the verge of transforming itself in offering the changes that can change the way a child learns everything that is needed in their future endeavour. This metamorphosis was imminent because we at Future Ray saw many innovative concepts & ideas that can add tremendous value addition in a child\'s development, thus this effort on to create our own identity. Future Ray as an educational organisation, is started to develop new educational system that can imbibe both value and knowledge based methodology in the form of play, scribble and practise.]]></string>
+	<string name="ngo_location">Bangalore</string>
+	<string name="ngo_name">Future Ray Play &amp; Learn</string>
+	<string name="obsolete_app_version">This version of the app is obsolete please update the app</string>
+	<string name="title_update_app">Update Application</string>
+	<string name="message_update_app">This version (%s) is no longer supported. Please update the app to enjoy our
+		services</string>
+	<string name="update">Update</string>
+	<string name="message_optional_update">We\'ve released a new version of the app. Please update the app to enjoy our new features.</string>
+	<string name="exit_app">Exit App</string>
+
+	<string name="desc_about_us">
+		<![CDATA[
+			Recover Habitat works on the cross roads of two critical concepts – a sustainability company that is driving
+			toward working on building a greener tomorrow and the use of innovation and technology for the same.
+			Conceptualized in the year 2015 and headquartered in Bangalore, India, Recover Habitat is finding firm ground in
+			rejuvenating the environment by working on maintaining, constructing and sustaining the environment for a greener
+			and balanced ecological system.
+		<br/><br/>
+
+		<p>
+			At Recover Habitat, we have built a process that sets a cutting-edge solution based on science and real-world
+			application. We partner with individuals, communities, associations and commercial establishments, Industries
+			and Farming that complement our expertise with our process-driven techniques leading to building, reviving and
+			restoring our environment. Our expertise is the experience we have gained working at ground zero with
+			individuals, associations and NGOs.
+		</p>
+
+		<p>
+			Recover Habitat delivers what our community needs in managing the change in our resource-constrained
+			ecological system. This change can be brought about effectively only by seeing the broader picture and giving
+			valuable attention to every detail. We combine our drive, technology and talent on right-sized teams of
+			experts that dedicatedly work on delivering full service projects that include analysis, planning,
+			implementation, communication and analytical reporting services that aid to improvising the environment.
+		</p>
+		<p>
+			In order to serve our planet right, we work towards rendering the highest quality services and ensure that we
+			have a greener tomorrow.
+		</p>
+		]]>
+	</string>
+	<string name="no_internet">No internet access</string>
+	<string name="no_transactions_yet">No transactions yet!</string>
+	<string name="msg_schedule_success">We appreciate your efforts in recycling with Old Raddi Sold</string>
+	<string name="msg_illegal_dump">Capture illegal dumping images below\nClick on the image to recapture it</string>
+	<string name="terms_and_conditions">By clicking on submit you agree\nto our Terms &amp; Conditions</string>
+	<string name="set_location">Set Location</string>
+
+</resources>

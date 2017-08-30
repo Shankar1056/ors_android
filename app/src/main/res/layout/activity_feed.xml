@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/white"
+	tools:context="online.ors.oldraddisold.activity.FeedActivity"
+	tools:ignore="MissingPrefix">
+
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/ll_comments">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<ImageView
+				android:id="@+id/iv_image"
+				android:layout_width="match_parent"
+				android:layout_height="240dp"
+				android:contentDescription="@string/content_description"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="@dimen/narrow"
+				android:layout_marginStart="@dimen/narrow"
+				android:layout_marginTop="@dimen/big"
+				android:orientation="horizontal">
+
+				<ImageButton
+					android:id="@+id/ib_fb"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/thin"
+					android:layout_weight="1"
+					android:background="@color/bg_fb"
+					android:contentDescription="@string/content_description"
+					android:padding="@dimen/narrow"
+					android:src="@drawable/ic_facebook_white_24dp"/>
+
+				<ImageButton
+					android:id="@+id/ib_twitter"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/thin"
+					android:layout_weight="1"
+					android:background="@color/bg_twitter"
+					android:contentDescription="@string/content_description"
+					android:padding="@dimen/narrow"
+					android:src="@drawable/ic_twitter_white_24dp"/>
+
+				<ImageButton
+					android:id="@+id/ib_mail"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/thin"
+					android:layout_weight="1"
+					android:background="@color/bg_email"
+					android:contentDescription="@string/content_description"
+					android:padding="@dimen/narrow"
+					android:src="@drawable/ic_email_white_24dp"/>
+
+				<ImageButton
+					android:id="@+id/ib_whats_app"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/thin"
+					android:layout_weight="1"
+					android:background="@color/bg_whats_app"
+					android:contentDescription="@string/content_description"
+					android:padding="@dimen/narrow"
+					android:src="@drawable/ic_whats_app_white_24dp"/>
+
+				<ImageButton
+					android:id="@+id/ib_message"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="@color/bg_message"
+					android:contentDescription="@string/content_description"
+					android:padding="@dimen/narrow"
+					android:src="@drawable/ic_message_white_24dp"/>
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/tv_title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/standard"
+				android:paddingBottom="@dimen/narrow"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_large"
+				tools:text="We accept all kind of raddi waste material &amp; stuff"/>
+
+			<TextView
+				android:id="@+id/tv_date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/narrow"
+				android:textSize="@dimen/text_tiny"
+				tools:text="Feb 02 2017, 2:15 PM"/>
+
+			<WebView
+				android:id="@+id/wv_description"
+				fontPath="fonts/lato-regular.ttf"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="@dimen/standard"
+				android:textSize="@dimen/text_small"
+				tools:text="It is a long established fact that a readerIt is a long established fact that a reader It is a long established fact that a reader It is a long established fact that a reader It is a long established fact that a reader"/>
+		</LinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+
+	<LinearLayout
+		android:id="@+id/ll_comments"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@color/navi_blue"
+		android:gravity="center_horizontal">
+
+		<TextView
+			android:id="@+id/tv_label_comments"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawablePadding="@dimen/standard"
+			android:drawableStart="@drawable/ic_comments_white_18dp"
+			android:gravity="center_vertical"
+			android:padding="@dimen/standard"
+			android:text="@string/view_comments"
+			android:textColor="@color/white"/>
+
+		<TextView
+			android:id="@+id/tv_comment_count"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/standard"
+			android:textColor="@color/white"
+			tools:text="5"/>
+	</LinearLayout>
+</RelativeLayout>

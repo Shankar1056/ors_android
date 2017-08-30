@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/standard"
+	android:gravity="center"
+	android:orientation="vertical"
+	android:paddingBottom="@dimen/narrow"
+	android:paddingEnd="@dimen/standard"
+	android:paddingStart="@dimen/standard"
+	android:paddingTop="@dimen/narrow"
+	tools:ignore="MissingPrefix">
+
+	<TextView
+		android:id="@+id/tv_month"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/black"
+		tools:text="June"/>
+
+	<TextView
+		android:id="@+id/tv_date"
+		fontPath="lato_extra_bold.ttf"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/selector_date"
+		android:textSize="56sp"
+		tools:text="02"/>
+
+	<TextView
+		android:id="@+id/tv_day"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@color/black"
+		tools:text="Friday"/>
+
+</LinearLayout>

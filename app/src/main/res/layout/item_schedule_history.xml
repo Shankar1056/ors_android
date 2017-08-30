@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/thin"
+	app:cardBackgroundColor="@color/white"
+	app:cardUseCompatPadding="true">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:padding="@dimen/narrow">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/thin"
+				android:text="@string/schedule_id"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_medium"/>
+
+			<TextView
+				android:id="@+id/tv_schedule_id"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="end"
+				android:padding="@dimen/thin"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_medium"
+				tools:text="32421AS"/>
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"
+			android:background="@color/grey_aaaaaa"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:orientation="horizontal"
+			android:paddingBottom="@dimen/narrow"
+			android:paddingEnd="@dimen/thin"
+			android:paddingStart="@dimen/thin"
+			android:paddingTop="@dimen/narrow">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/content_description"
+				android:src="@drawable/ic_schedule_history_green_50dp"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/tv_schedule_date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="@dimen/narrow"
+					android:textColor="@color/grey_545454"
+					android:textSize="@dimen/text_small"
+					tools:text="Schedule Date      :    25 APR"/>
+
+				<TextView
+					android:id="@+id/tv_schedule_time"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingBottom="@dimen/narrow"
+					android:paddingStart="@dimen/narrow"
+					android:paddingTop="@dimen/narrow"
+					android:textColor="@color/grey_545454"
+					android:textSize="@dimen/text_small"
+					tools:text="Schedule Time     :    3:15 pm"/>
+
+				<TextView
+					android:id="@+id/tv_schedule_status"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:padding="@dimen/narrow"
+					android:textColor="@color/green"
+					android:textSize="@dimen/text_small"
+					tools:text="Schedule Status  :    25 APR"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5dp"
+			android:background="@color/grey_aaaaaa"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:gravity="center"
+			android:padding="@dimen/thick"
+			android:text="@string/view_order_details"
+			android:textColor="@color/green"/>
+	</LinearLayout>
+</android.support.v7.widget.CardView>

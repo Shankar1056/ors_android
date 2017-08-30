@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#f8f8f8"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/thick"
+			android:gravity="center"
+			android:text="@string/hint_donate"
+			android:textColor="@color/black"
+			android:textSize="@dimen/text_tiny"/>
+
+		<View
+			android:layout_width="@dimen/huge"
+			android:layout_height="0.5dp"
+			android:layout_marginTop="@dimen/narrow"
+			android:background="@color/black"/>
+
+		<android.support.v7.widget.CardView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/standard"
+			app:cardBackgroundColor="@color/white"
+			app:cardCornerRadius="0dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:paddingBottom="@dimen/thick"
+					android:paddingEnd="@dimen/standard"
+					android:paddingStart="@dimen/standard"
+					android:paddingTop="@dimen/thick">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/your_balance"
+						android:textColor="@color/grey_545454"/>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/tv_balance"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="end"
+							android:textColor="@color/walletPrimary"
+							android:textSize="@dimen/text_large"
+							tools:text="\u20B9 3000"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="end"
+							android:text="@string/minimum_redeem"
+							android:textColor="@color/grey_848484"
+							android:textSize="@dimen/text_tiny"/>
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.5dp"
+					android:background="@color/grey_e0e0e0"/>
+
+				<TextView
+					android:id="@+id/tv_redeem_history"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:drawableEnd="@drawable/ic_right_arrow_grey_18dp"
+					android:padding="@dimen/standard"
+					android:text="@string/wallet_transactions"
+					android:textColor="@color/grey_545454"/>
+
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/standard"
+			android:background="@color/grey_e0e0e0"
+			android:orientation="horizontal"
+			android:padding="@dimen/thick">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:background="@color/grey_e0e0e0"
+				android:text="@string/rupee_symbol"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_medium"/>
+
+			<android.support.v7.widget.AppCompatEditText
+				android:id="@+id/et_amount"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/transparent"
+				android:inputType="numberDecimal"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_medium"
+				tools:text="300"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="@dimen/standard"
+			android:layout_marginStart="@dimen/standard"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tv_donate_0"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="@dimen/standard"
+				android:layout_weight="1"
+				android:background="@drawable/black_border"
+				android:gravity="center"
+				android:paddingBottom="@dimen/narrow"
+				android:paddingEnd="@dimen/standard"
+				android:paddingStart="@dimen/standard"
+				android:paddingTop="@dimen/narrow"
+				android:textColor="@color/selector_donate"
+				android:textSize="@dimen/text_small"
+				tools:text="\u20B9 300"/>
+
+			<TextView
+				android:id="@+id/tv_donate_1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="@dimen/standard"
+				android:layout_weight="1"
+				android:background="@drawable/black_border"
+				android:gravity="center"
+				android:paddingBottom="@dimen/narrow"
+				android:paddingEnd="@dimen/standard"
+				android:paddingStart="@dimen/standard"
+				android:paddingTop="@dimen/narrow"
+				android:textColor="@color/selector_donate"
+				android:textSize="@dimen/text_small"
+				tools:text="\u20B9 300"/>
+
+			<TextView
+				android:id="@+id/tv_donate_2"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="@dimen/standard"
+				android:layout_weight="1"
+				android:background="@drawable/black_border"
+				android:gravity="center"
+				android:paddingBottom="@dimen/narrow"
+				android:paddingEnd="@dimen/standard"
+				android:paddingStart="@dimen/standard"
+				android:paddingTop="@dimen/narrow"
+				android:textColor="@color/selector_donate"
+				android:textSize="@dimen/text_small"
+				tools:text="\u20B9 300"/>
+
+			<TextView
+				android:id="@+id/tv_donate_3"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="@drawable/black_border"
+				android:gravity="center"
+				android:paddingBottom="@dimen/narrow"
+				android:paddingEnd="@dimen/standard"
+				android:paddingStart="@dimen/standard"
+				android:paddingTop="@dimen/narrow"
+				android:textColor="@color/selector_donate"
+				android:textSize="@dimen/text_small"
+				tools:text="\u20B9 300"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="@dimen/standard"
+			android:layout_marginStart="@dimen/standard"
+			android:layout_marginTop="@dimen/medium"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_redeem"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="@color/walletPrimary"
+				android:minHeight="40dp"
+				android:text="@string/redeem_now"
+				android:textAllCaps="false"
+				android:textColor="@color/white"
+				android:textSize="@dimen/text_medium"/>
+
+			<android.support.v7.widget.AppCompatButton
+				android:id="@+id/btn_donate"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/big"
+				android:layout_weight="1"
+				android:background="@color/walletPrimary"
+				android:minHeight="0dp"
+				android:padding="@dimen/thick"
+				android:text="@string/donate_now"
+				android:textAllCaps="false"
+				android:textColor="@color/white"
+				android:textSize="@dimen/text_regular"/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/tv_donate_know_more"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="end"
+			android:padding="@dimen/standard"
+			android:text="@string/donate_know_more"
+			android:textColor="@color/green"/>
+	</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

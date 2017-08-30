@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="online.ors.oldraddisold.activity.ProfileActivity"
+	tools:ignore="MissingPrefix">
+
+	<ImageView
+		android:id="@+id/iv_bg"
+		android:layout_width="match_parent"
+		android:layout_height="280dp"
+		android:contentDescription="@string/content_description"/>
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="280dp"
+		android:contentDescription="@string/content_description"
+		android:src="@color/maroon_transparent"/>
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:layout_marginTop="@dimen/standard"
+		app:titleTextAppearance="@style/ToolbarTitle"/>
+
+
+	<de.hdodenhof.circleimageview.CircleImageView
+		android:id="@+id/iv_avatar"
+		android:layout_width="118dp"
+		android:layout_height="118dp"
+		android:layout_below="@id/toolbar"
+		android:layout_centerHorizontal="true"
+		app:civ_border_color="@color/white"
+		app:civ_border_width="@dimen/thin"/>
+
+	<TextView
+		android:id="@+id/tv_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/iv_avatar"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/standard"
+		android:textColor="@color/white"
+		android:textSize="@dimen/text_title"
+		tools:text="Samuel Robert"/>
+
+	<android.support.v7.widget.CardView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/iv_bg"
+		android:layout_marginBottom="@dimen/standard"
+		android:layout_marginEnd="@dimen/standard"
+		android:layout_marginStart="@dimen/standard"
+		android:layout_marginTop="-24dp"
+		app:contentPadding="@dimen/standard">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/medium"
+				android:padding="@dimen/thin"
+				android:text="@string/name"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_medium"/>
+
+			<TextView
+				android:id="@+id/tv_full_name"
+				fontPath="fonts/lato-regular.ttf"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/narrow"
+				android:background="@drawable/transparent_underline"
+				android:padding="@dimen/thin"
+				tools:text="Samuel Robert"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/medium"
+				android:padding="@dimen/thin"
+				android:text="@string/email_id"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_medium"/>
+
+			<TextView
+				android:id="@+id/tv_email"
+				fontPath="fonts/lato-regular.ttf"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/narrow"
+				android:background="@drawable/transparent_underline"
+				android:padding="@dimen/thin"
+				tools:text="sam@spotsoon.com"/>
+
+			<TextView
+				android:id="@+id/tv_mobile_edit"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/medium"
+				android:drawableEnd="@drawable/ic_edit_black_24dp"
+				android:padding="@dimen/thin"
+				android:text="@string/mobile_number"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_medium"/>
+
+			<TextView
+				android:id="@+id/tv_mobile"
+				fontPath="fonts/lato-regular.ttf"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/narrow"
+				android:background="@drawable/transparent_underline"
+				android:padding="@dimen/thin"
+				tools:text="(+91) 9663379596"/>
+
+		</LinearLayout>
+
+	</android.support.v7.widget.CardView>
+
+</RelativeLayout>
